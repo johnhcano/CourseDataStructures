@@ -1,4 +1,4 @@
-Aplicación para la compra y venta de vihículos
+Aplicación para la compra y venta de vehículos
 
 Este enunciado proporciona las clases necesarias y define las funcionalidades básicas del sistema de compra y venta de vehículos. Puedes ampliar el enunciado según las necesidades y agregar funcionalidades adicionales al sistema si así lo requiere.
 
