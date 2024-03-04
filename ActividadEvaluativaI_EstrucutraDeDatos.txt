@@ -47,7 +47,7 @@ Clase Principal (Main):
 En el método main, crea al menos tres instancias de la clase Vehiculo con información variada.
 Crea una instancia de la clase CompraVenta con un nombre específico y dimensiones para el inventario.
 Agrega los vehículos al inventario de la compra y venta en posiciones específicas.
-Imprime el inventario del concesionario para verificar que los vehículos se hayan agregado correctamente.
+Imprime el inventario de la compra y venta para verificar que los vehículos se hayan agregado correctamente.
 Muestra los vehículos vendidos por cada vendedor.
 
 
