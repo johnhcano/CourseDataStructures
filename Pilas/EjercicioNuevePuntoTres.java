@@ -14,7 +14,7 @@ public class EjercicioNuevePuntoTres {
 
     public static void main(String[] args) {
 
-        System.out.println(validarExpresion("\"{2*[(a+b)/2.5 + x - 7*y]}\""));
+        System.out.println(validarExpresion("{2*[(a+b)/2.5 + x - 7*y]}"));
     }
 
     public static boolean validarExpresion(String expMat) {
