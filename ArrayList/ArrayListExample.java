@@ -41,11 +41,11 @@ public class ArrayListExample {
                         break;
                     }
                     case 3: {
-                        //codigo
+                        // codigo
                         break;
                     }
                     case 4: {
-                        //codigo
+                        // codigo
                         break;
                     }
                     case 5: {
@@ -53,11 +53,11 @@ public class ArrayListExample {
                         break;
                     }
                     case 6: {
-                        //codigo
+                        // codigo
                         break;
                     }
                     case 7: {
-                        //codigo
+                        // codigo
                         break;
                     }
                     case 8: {

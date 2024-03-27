@@ -33,13 +33,13 @@ public class OperacionesConArrays {
 
     public int[] mostrarPares(int[] a) {
         int c = 0;
-        for(int i: a){
+        for (int i : a) {
             if (i % 2 == 0) {
-                c+=1;
+                c += 1;
             }
         }
         int[] p = new int[c];
-        int j=0;
+        int j = 0;
         for (int i : a) {
             if (i % 2 == 0) {
                 p[j] = i;
