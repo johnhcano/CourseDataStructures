@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class Ejemplo1 {
+public class EjercicioNuevePuntoTres {
 
     /*
      * Escribir un programa que, haciendo uso de una Pila, procese cada uno de los
