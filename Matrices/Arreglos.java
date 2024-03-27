@@ -21,6 +21,8 @@ public class Arreglos {
         System.out.println(objA.sumarArregloFor(res));
 
         objA.mostrarArreglo(objA.mostrarPares(res));
+
+        objA.mostrarArreglo(arr);
     }
 
 }
