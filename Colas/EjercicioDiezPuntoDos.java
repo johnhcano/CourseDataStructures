@@ -15,14 +15,16 @@ public class EjercicioDiezPuntoDos {
         cola1.add(2);
         cola1.add(3);
 
-        cola2.add(10);
-        cola2.add(20);
+        cola2.add(1);
+        cola2.add(2);
         cola2.add(3);
 
         System.out.println("cola 1 --> " + cola1);
         System.out.println("cola 2 --> " + cola2);
 
-        System.out.println("Colas Iguales?: " + validarColasIdenticas(cola1, cola2));
+        //System.out.println("Colas Iguales?: " + validarColasIdenticas(cola1, cola2));
+        String msg = validarColasIdenticas(cola1, cola2) ? "Colas Iguales" : "Colas Diferentes";
+        System.out.println(msg);
     
     }
 
