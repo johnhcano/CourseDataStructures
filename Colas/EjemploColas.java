@@ -41,5 +41,12 @@ public class EjemploColas {
         //Mostramos los elementos de la cola.
         System.out.println("Elementos de la cola: " + cola);
 
+        //Validar si la cola esta vacía (isEmpty)
+        System.out.println("La cola esta vacía? " + cola.isEmpty());
+
+        //Validar si se encuentra el elemento a buscar dentro de la cola
+        int n = 10;
+        System.out.println("El elemento " + n + " está dentro de la cola? " + cola.contains(n));
+        
     }
 }
