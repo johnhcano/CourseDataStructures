@@ -1,7 +1,5 @@
 package Colas;
 
-import java.util.Random;
-
 public class EjercicioDiezPuntoUno {
     public static void main(String[] args) {
         /*
@@ -11,8 +9,7 @@ public class EjercicioDiezPuntoUno {
             los números negativos que tiene la cola original.
          */
 
-         Random aleatorio = new Random();
-         int n = aleatorio.nextInt(-25 - 25 + 1) + 25;
+         int n = (int) (Math.floor(Math.random()*((-25)-25+1)+25));
          System.out.println(n);
 
     }
