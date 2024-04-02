@@ -24,5 +24,8 @@ public class TallerColas{
         //Mostramos los elementos de la cola
         System.out.println("Elementos dentro de la Cola: " + cola);
 
+        //Mostrar la cabeza de la cola (primer elemento de la cola) --> peek()
+        System.out.println("Primer elemento de la cola: " + cola.peek());
+
     }
 }
