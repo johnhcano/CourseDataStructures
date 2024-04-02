@@ -18,5 +18,11 @@ public class TallerColas{
         //Mostrar la cabeza de la cola (primer elemento de la cola) --> element()
         System.out.println("Primer elemento de la cola: " + cola.element());
 
+        //Agregar un elemento a la cola --> offer(E e)
+        System.out.println("Se agregó un elemento a la cola?: " + cola.offer("Cuadrado"));
+
+        //Mostramos los elementos de la cola
+        System.out.println("Elementos dentro de la Cola: " + cola);
+
     }
 }
