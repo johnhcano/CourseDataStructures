@@ -7,9 +7,27 @@ public class EjercicioDiezPuntoDos {
         * Escribir un método que tenga como argumentos dos colas del mismo tipo 
         * y devuelva cierto si las dos colas son idénticas.
         */
+
+        Queue<Integer> cola1 = new ArrayDeque<>();
+        Queue<Integer> cola2 = new ArrayDeque<>();
+
+        cola1.add(1);
+        cola1.add(2);
+        cola1.add(3);
+
+        cola2.add(10);
+        cola2.add(20);
+        cola2.add(3);
+
+        System.out.println("cola 1 --> " + cola1);
+        System.out.println("cola 2 --> " + cola2);
+
+        System.out.println("Colas Iguales?: " + validarColasIdenticas(cola1, cola2));
+    
     }
 
-    public boolean validarColasIdenticas(Queue<Integer> c1, Queue<Integer> c2){
+
+    public static boolean validarColasIdenticas(Queue<Integer> c1, Queue<Integer> c2){
         boolean flag = false;
         int cabezaCola1 = 0;
         int cabezaCola2 = 0;
