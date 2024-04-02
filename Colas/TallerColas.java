@@ -24,8 +24,17 @@ public class TallerColas{
         //Mostramos los elementos de la cola
         System.out.println("Elementos dentro de la Cola: " + cola);
 
-        //Mostrar la cabeza de la cola (primer elemento de la cola) --> peek()
+        //Mostrar la cabeza de la cola (primer elemento de la cola) --> peek() retorna "null" en caso de que la cola esté vacía
         System.out.println("Primer elemento de la cola: " + cola.peek());
+
+        //Remover un elemento de la cola poll(), si la cola está vacía retorna "null"
+        System.out.println("Elemento eliminado de la cola: " + cola.poll());
+        
+        //Remover un elemento de la cola remove()
+        System.out.println("Elemento eliminado de la cola: " + cola.remove());
+
+        //Mostramos los elementos de la cola
+        System.out.println("Elementos dentro de la Cola: " + cola);
 
     }
 }
