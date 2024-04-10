@@ -15,6 +15,7 @@ public class EjemploColas {
         cola.add(8);
         cola.add(16);
         cola.add(6);
+        cola.add(500);
 
         //Mostramos los elementos de la cola.
         System.out.println("Elementos de la cola: " + cola);
