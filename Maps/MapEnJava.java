@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class MapEnJava {
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
         Map<Integer, String> estudiantes = new HashMap<>();
 
