@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Ejecutar{
     public static void main(String[] args){
         //Arreglo que se va a evaluar
@@ -5,7 +7,7 @@ public class Ejecutar{
 
         OperacionesArreglos objOpArr = new OperacionesArreglos();
 
-        System.out.println(objOpArr.posicionesNumero(A, 6));
+        System.out.println(Arrays.toString(objOpArr.posicionesNumero(A, 6)));
         
     }
 }
