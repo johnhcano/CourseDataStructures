@@ -23,6 +23,8 @@ public class Ejecutar{
         int[] b = objArreglo.llenarArreglo(6, 1, 1000);
 
         objArreglo.mostrarArreglo(b);
+
+        System.out.println(Arrays.toString(b));
         
     }
 }
