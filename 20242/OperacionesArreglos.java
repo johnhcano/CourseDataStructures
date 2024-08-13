@@ -27,4 +27,13 @@ public class OperacionesArreglos {
         }
         System.out.println(cad);
     }
+
+    //llenar el arreglo
+    public int[] llenarArreglo(int tam, int n, int f){
+        int[] a = new int[tam];
+        for(int i = 0; i < a.length; i++){
+            a[i] = (int) (Math.random() * (f - n + 1)) + n;
+        }
+        return a;
+    }
 }
