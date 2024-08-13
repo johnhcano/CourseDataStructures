@@ -18,4 +18,13 @@ public class OperacionesArreglos {
         }
         return resultado;
     }
+
+    //Mostrar los elementos del arreglo
+    public void mostrarArreglo(int[] a){
+        String cad = "";
+        for(int i = 0; i < a.length; i++){
+            cad += a[i] + " ";
+        }
+        System.out.println(cad);
+    }
 }
