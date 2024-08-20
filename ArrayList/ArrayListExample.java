@@ -69,7 +69,6 @@ public class ArrayListExample {
                 ch = Integer.parseInt(in.next());
             } while (ch == 1);
         } catch (NumberFormatException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
