@@ -1,4 +1,4 @@
-public class Ejecutar {
+public class EjecutarMatrices {
     public static void main(String[] args) {
         String cadPares = "", cadImpares = "";
 
