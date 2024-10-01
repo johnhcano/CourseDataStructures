@@ -14,7 +14,7 @@ public class EjercicioDiezPuntoDos {
         Queue<Integer> cola2 = new ArrayDeque<>();
 
         cola1.add(1);
-        cola1.add(2);
+        cola1.add(5);
         cola1.add(3);
 
         cola2.add(1);
