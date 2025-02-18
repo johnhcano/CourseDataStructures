@@ -7,7 +7,7 @@ public class EjemploMatrices {
                       { 8, 7, 6 } };
 
         for (int i = 0; i < m.length; i++) {
-            for (int j = 0; j < m.length; j++) {
+            for (int j = 0; j < m[0].length; j++) {
                 System.out.println("m[" + i + "][" + j + "]=" + m[i][j]);
             }
 
