@@ -1,13 +1,13 @@
 public class MetodosArreglos {
 
-    public String nombresSueldos(String[] n, int[] s){
+    public String nombresSueldos(String[] n, int[] s) {
         int suma = 0;
-        //Calcular la suma de los sueldos de los empleados
+        // Calcular la suma de los sueldos de los empleados
         for (int i = 0; i < s.length; i++) {
             suma += s[i];
         }
-        
-        //Calcular el promedio de los sueldos
+
+        // Calcular el promedio de los sueldos
         double promedio = suma / s.length;
 
         String cad = "";
@@ -20,7 +20,7 @@ public class MetodosArreglos {
             }
         }
 
-        cad += "Fueron " + contador + " los empleados que tiene sueldo por encima del promedio: " +promedio;
+        cad += "Fueron " + contador + " los empleados que tienen sueldo por encima del promedio: " + promedio;
 
         return cad;
     }
