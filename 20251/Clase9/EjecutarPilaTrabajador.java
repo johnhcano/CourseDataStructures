@@ -18,8 +18,12 @@ public class EjecutarPilaTrabajador {
         
         System.out.println(trabajadores.size());
 
+        double inc = 0.20; //incremento del salario en un 20%
+
         for(int i = 0; i < trabajadores.size(); i++){
-            System.out.println(trabajadores.elementAt(i).getNombre());
+            System.out.println("Nombre: " + trabajadores.elementAt(i).getNombre() + 
+            "Salario inicial: " + trabajadores.elementAt(i).getSalario() + 
+            "Salario final: " + trabajadores.elementAt(i).pagar(inc) + "\n");
         }
     }
 }
