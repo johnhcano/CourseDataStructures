@@ -2,13 +2,13 @@ public class Trabajador {
 
     private String cedula;
     private String nombre;
-    private double salario;
+    private double sueldo;
     
-    public Trabajador(String cedula, String nombre, double salario){
+    public Trabajador(String cedula, String nombre, double sueldo){
         this.cedula = cedula;
         this.nombre = nombre;
-        this.salario = salario;
+        this.sueldo = sueldo;
     }
 
-    
+
 }
