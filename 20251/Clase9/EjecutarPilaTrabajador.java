@@ -14,8 +14,12 @@ public class EjecutarPilaTrabajador {
         trabajadores.push(t2);
         trabajadores.push(t3);
 
-        System.out.println(trabajadores);
+        //System.out.println(trabajadores);
         
+        System.out.println(trabajadores.size());
 
+        for(int i = 0; i < trabajadores.size(); i++){
+            System.out.println(trabajadores.elementAt(i).getNombre());
+        }
     }
 }
