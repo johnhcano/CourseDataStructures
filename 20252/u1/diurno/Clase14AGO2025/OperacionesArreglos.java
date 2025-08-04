@@ -17,4 +17,14 @@ public class OperacionesArreglos {
 
         return numeros;
     }
+
+    //Sumar los elementos de un arreglo de enteros
+
+    //Obtener el promedio de un arreglo de enteros
+
+    //Obtener los numeros repetidos de un arreglo de enteros
+
+    //Obtener el mayor y el menor de un arreglo de enteros
+
+
 }
