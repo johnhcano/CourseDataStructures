@@ -1,5 +1,3 @@
-package Clase14AGO2025;
-
 import java.util.Random;
 
 public class OperacionesArreglos {
