@@ -39,5 +39,12 @@ public class ValidacionCadenasPila {
          *     System.out.println("No Equlibrados");
          * }
          */
+
+        /*
+         * Revisar e implementar los metodos que se heredan de la clase Vector
+         * https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+         * add, addAll, contains,.................todos los demás metodos
+         * hacer un ejercicio donde se hagan las pruebas de cada método.
+         * */ 
     }  
 }
