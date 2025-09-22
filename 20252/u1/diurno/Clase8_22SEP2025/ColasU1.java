@@ -33,7 +33,6 @@ public class ColasU1 {
 
         cola.clear(); //Borrar todos los elementos de la cola
 
-        System.out.println(cola.poll()); //null
-
+        System.out.println(cola.poll()); //null  
     }    
 }
