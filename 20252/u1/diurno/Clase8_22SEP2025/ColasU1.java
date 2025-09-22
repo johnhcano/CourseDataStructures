@@ -27,6 +27,8 @@ public class ColasU1 {
 
         System.out.println(cola.poll()); //[10, 3, 20, 9]
 
+        System.out.println("Tamaño de la cola: " + cola.size()); //
+
         System.out.println(cola.remove()); //[3, 20, 9]
 
         cola.clear(); //Borrar todos los elementos de la cola
