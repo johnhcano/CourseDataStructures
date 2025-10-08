@@ -1,4 +1,4 @@
-public class Ejecutar {
+public class EjecutarArr {
     public static void main(String[] args) {
         // Crear el objeto para acceder a la clase MetodosArreglos
         MetodosArreglos obj = new MetodosArreglos();
