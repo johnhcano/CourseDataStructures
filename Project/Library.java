@@ -221,6 +221,7 @@ public class Library {
 
     // ===== UNDO =====
     public boolean undoLast() {
+        String msg = "Undo last operation ok. ";
         if (undoStack.isEmpty()) {
             System.out.println("Nothing to undo.");
             return false;
@@ -228,8 +229,10 @@ public class Library {
         Operation op = undoStack.pop();
         OperationType t = op.getType();
 
-        if (t == OperationType.REMOVE_BOOK)
+        if (t == OperationType.REMOVE_BOOK){
+            msg += "Removed book: " + op.getA();
             return removeBook(op.getA());
+        }
 
         if (t == OperationType.UPDATE_BOOK) {
             String isbn = op.getA();
@@ -242,6 +245,8 @@ public class Library {
                 oldAuthor = pair.substring(0, sep);
                 oldCategory = pair.substring(sep + 1);
             }
+            msg += "Restored book: " + isbn;
+            System.out.println(msg);
             return updateBook(isbn, oldTitle, oldAuthor, oldCategory);
         }
 
@@ -254,19 +259,33 @@ public class Library {
                 b.setCategory(pair.substring(sep + 1));
             }
             addBook(b);
+            msg += "Re-added book: " + b.getIsbn();
+            System.out.println(msg);
             return true;
         }
 
-        if (t == OperationType.REMOVE_USER)
+        if (t == OperationType.REMOVE_USER){
+            msg += "Removed user: " + op.getA();
+            System.out.println(msg);
             return removeUser(op.getA());
+        }
+
         if (t == OperationType.REGISTER_USER) {
             registerUser(new User(op.getA(), op.getB()));
+            msg += "Re-registered user: " + op.getA();
+            System.out.println(msg);
             return true;
         }
-        if (t == OperationType.RETURN)
+        if (t == OperationType.RETURN){
+            msg += "Returned book: " + op.getA();
+            System.out.println(msg);
             return returnBook(op.getA(), op.getB());
-        if (t == OperationType.BORROW)
+        }
+        if (t == OperationType.BORROW){
+            msg += "Borrowed book: " + op.getA();
+            System.out.println(msg);
             return borrow(op.getA(), op.getB());
+        }
 
         if (t == OperationType.ENQUEUE_RESERVATION) {
             Book b = findBook(op.getB());
