@@ -1,11 +1,9 @@
 import java.util.LinkedList;
 
 public class User {
-    
     private String id;
     private String name;
-    // Loan history for the user (LinkedList is required by the task)
-    private LinkedList<Loan> history = new LinkedList<>();
+    private LinkedList<String> loanHistory = new LinkedList<String>();
 
     public User(String id, String name) {
         this.id = id;
@@ -20,12 +18,15 @@ public class User {
         return name;
     }
 
-    public LinkedList<Loan> getHistory() {
-        return history;
+    public void setName(String n) {
+        this.name = n;
     }
 
-    @Override
+    public LinkedList<String> getLoanHistory() {
+        return loanHistory;
+    }
+
     public String toString() {
-        return id + " - " + name + " (Loans: " + history.size() + ")";
+        return "[id=" + id + ", name=" + name + ", history=" + loanHistory.size() + "]";
     }
 }

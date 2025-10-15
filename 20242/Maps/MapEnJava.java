@@ -17,18 +17,18 @@ public class MapEnJava {
 
         // Imprimimos el Map con un Iterador
         Iterator it = estudiantes.keySet().iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             Integer key = (Integer) it.next();
             System.out.println("Clave: " + key + " -> Valor: " + estudiantes.get(key));
         }
-        
+
         System.out.println("Otra forma de recorrer los Map");
 
-        //Alternativa para recorrer los Map mostrando la Clave y el valor
-        for (Entry<Integer, String> est : estudiantes.entrySet()){
-	        Integer clave = est.getKey();
-	        String valor = est.getValue();
-	        System.out.println(clave+"  ->  "+valor);
+        // Alternativa para recorrer los Map mostrando la Clave y el valor
+        for (Entry<Integer, String> est : estudiantes.entrySet()) {
+            Integer clave = est.getKey();
+            String valor = est.getValue();
+            System.out.println(clave + "  ->  " + valor);
         }
     }
 }
