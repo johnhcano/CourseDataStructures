@@ -1,3 +1,28 @@
+/**
+ * Clase: LibraryUI (Interfaz de Usuario)
+ * --------------------------------------
+ * Esta clase muestra los menús en la consola
+ * y permite que el usuario use el sistema.
+ * 
+ * Desde aquí se pueden hacer las acciones principales:
+ *  - Administrar libros (agregar, editar, eliminar, buscar).
+ *  - Registrar o eliminar usuarios.
+ *  - Prestar y devolver libros.
+ *  - Usar la opción "Deshacer" para revertir la última acción.
+ *
+ * El programa funciona con un menú por consola:
+ *  1. Libros
+ *  2. Usuarios
+ *  3. Préstamos
+ *  4. Deshacer
+ *  0. Salir
+ *
+ * En resumen:
+ * - Es la parte visible del programa.
+ * - Se encarga de hablar con el usuario y pedirle opciones.
+ * - Llama a la clase Library para hacer las acciones.
+ */
+
 import java.util.Scanner;
 import java.util.Stack;
 

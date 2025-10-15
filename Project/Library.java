@@ -1,3 +1,39 @@
+/**
+ * Clase: Library (Biblioteca)
+ * ---------------------------------
+ * Esta es la clase principal del proyecto.
+ * Aquí se maneja todo lo que pasa en la biblioteca:
+ * 
+ * 1. Los libros (agregar, editar, eliminar, buscar).
+ * 2. Los usuarios (registrar, eliminar, listar, buscar).
+ * 3. Los préstamos (prestar, devolver, mostrar historial).
+ * 4. El sistema de "Deshacer" (Undo) para revertir acciones.
+ *
+ * Estructuras usadas:
+ * - ArrayList: para listas de libros, usuarios y préstamos.
+ * - LinkedList: para el historial de operaciones.
+ * - Queue: para la lista de espera de libros ocupados.
+ * - Stack: para guardar las acciones que se pueden deshacer.
+ *
+ * En resumen:
+ * - Controla toda la lógica del sistema.
+ * - Cada vez que haces algo (agregar, borrar, etc.),
+ *   guarda cómo revertirlo si luego usas "Deshacer".
+ *
+ * Sobre el método Undo:
+ * ------------------------
+ * Cuando el usuario elige "Deshacer", el sistema toma
+ * la última acción guardada en la pila (como si fuera Ctrl+Z)
+ * y ejecuta la acción contraria:
+ * 
+ * Ejemplo:
+ *  - Si agregaste un libro, Undo lo borra.
+ *  - Si borraste un libro, Undo lo vuelve a crear.
+ *  - Si prestaste un libro, Undo lo devuelve.
+ * 
+ * Esto permite volver atrás paso a paso en orden inverso.
+ */
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;

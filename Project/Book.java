@@ -1,4 +1,23 @@
-import java.util.LinkedList;
+/**
+ * Clase: Book (Libro)
+ * -------------------------------
+ * Esta clase representa un libro de la biblioteca.
+ * Guarda su información básica: ISBN, título, autor y categoría.
+ * También sabe si el libro está disponible o prestado.
+ * 
+ * Además, cada libro tiene una "lista de espera" donde se
+ * van guardando los usuarios que quieren pedirlo cuando esté libre.
+ *
+ * Estructuras usadas:
+ * - Queue (cola): para manejar la lista de espera de forma ordenada.
+ *
+ * En resumen:
+ * - Guarda los datos del libro.
+ * - Permite saber si está libre o prestado.
+ * - Mantiene una cola de usuarios que esperan por el libro.
+ */
+
+ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Book {
